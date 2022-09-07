@@ -91,6 +91,18 @@ Note: above datasets may come from the official release or some awesome collecti
 
 The training code is at [KAIR](https://github.com/cszn/KAIR/blob/master/docs/README_SwinIR.md).
 
+## Setup with conda
+**Step 1.** Create Conda environment.
+```bash
+conda create -n SwinSR python=3.8
+conda activate SwinSR
+```
+**Step 2.** Install torch from [pytorch.org](https://pytorch.org/get-started/locally/)
+
+**Step 3.** Install the requirements.
+```bash
+pip install -r requirements.txt
+```
 ## Testing (without preparing datasets)
 For your convience, we provide some example datasets (~20Mb) in `/testsets`. 
 If you just want codes, downloading `models/network_swinir.py`, `utils/util_calculate_psnr_ssim.py` and `main_test_swinir.py` is enough.
